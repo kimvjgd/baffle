@@ -1,6 +1,7 @@
 import 'package:baffle/app/binding/init_bindings.dart';
 import 'package:baffle/app/controller/diary_controller.dart';
 import 'package:baffle/app/ui/components/dong_colors.dart';
+import 'package:baffle/app/ui/page/bottomnavi/diary/drawing_screen.dart';
 import 'package:baffle/app/ui/widgets/bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,8 +26,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
         canvasColor: app_orange10,
       ),
+      debugShowCheckedModeBanner: false,
       initialBinding: InitBinding(),
-      home: IndexScreen(),
+      home: DrawingScreen(),
     );
   }
 }
